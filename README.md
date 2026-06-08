@@ -6,12 +6,16 @@
 
 ---
 
-## Executive Summary  
 ![Feature Distributions](feature_distributions.png)  
+
+---
+## Executive Summary  
+
 This project applies exploratory data analysis and binary classification to predict diabetes diagnosis from patient medical records. Using a dataset of 96,000 patients spanning eight clinical and demographic features, the analysis evaluates Logistic Regression and Random Forest models against a priority metric of recall: the ability to correctly identify diabetic patients.
 
 The best model, a GridSearchCV-tuned Random Forest, achieved a recall of **0.92** on the unseen test set, correctly identifying 1,536 out of 1,696 diabetic patients. The project also surfaces the risk factor combinations most associated with a diabetes diagnosis, providing interpretable clinical insight alongside predictive performance.  
-![Feature Importance](feature_importance.png)
+
+
 
 ---
 
@@ -22,7 +26,7 @@ Standard classification models optimised for accuracy perform poorly on imbalanc
 The core challenge addresses two specific questions:
 
 1. **Risk Identification:** Which combination of patient characteristics : age, BMI, HbA1c, blood glucose, hypertension, heart disease, smoking history and gender is most associated with a diabetes diagnosis?
-2. **Early Detection:** Can a machine learning model correctly flag diabetic patients at a recall rate high enough to be useful in a clinical screening context?
+3. **Early Detection:** Can a machine learning model correctly flag diabetic patients at a recall rate high enough to be useful in a clinical screening context?
 
 ---
 
@@ -30,12 +34,17 @@ The core challenge addresses two specific questions:
 
 **From the EDA:**
 HbA1c and blood glucose are the strongest individual predictors of diabetes. Age is the most important demographic factor; risk increases sharply after 45.   
-The typical diabetic patient profile is: older age, elevated BMI, high HbA1c and blood glucose, often accompanied by hypertension or heart disease. No single feature tells the whole story.  
+The typical diabetic patient profile is: older age, elevated BMI, high HbA1c and blood glucose, often accompanied by hypertension or heart disease. No single feature tells the whole story. 
+
 ![Risk Factor Combinations](risk_combinations.png)  
 
-**From the modelling:**
+
+---
+**From the ML Models:**
 Class imbalance was the biggest obstacle. Addressing it explicitly with `class_weight='balanced'` and recall-focused hyperparameter tuning was the difference between a model that misses 37% of diabetic patients and one that misses only 8%.
 
+
+![Feature Importance](feature_importance.png)
 ---
 
 ## Model Comparison
@@ -88,5 +97,4 @@ Python; pandas; numpy; plotnine; seaborn; matplotlib; scikit-learn; pyjanitor
 
 ## Connect
 
-**Johanna Ezedinma**
 [LinkedIn](https://www.linkedin.com/in/johanna-ezedinma) &nbsp;|&nbsp; [GitHub](https://github.com/Johanna-ezedinma)
