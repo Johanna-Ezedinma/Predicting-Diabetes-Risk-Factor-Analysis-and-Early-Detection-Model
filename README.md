@@ -6,7 +6,7 @@
 
 ---
 
-![Feature Distributions](feature_distributions.png)  
+![Feature Distributions](Images/feature_distributions.png)  
 
 ---
 ## Executive Summary  
@@ -36,15 +36,19 @@ The core challenge addresses two specific questions:
 HbA1c and blood glucose are the strongest individual predictors of diabetes. Age is the most important demographic factor; risk increases sharply after 45.   
 The typical diabetic patient profile is: older age, elevated BMI, high HbA1c and blood glucose, often accompanied by hypertension or heart disease. No single feature tells the whole story. 
 
-![Risk Factor Combinations](risk_combinations.png)  
+![Risk Factor Combinations](Images/risk_combinations.png)  
 
 
 ---
 **From the ML Models:**
 Class imbalance was the biggest obstacle. Addressing it explicitly with `class_weight='balanced'` and recall-focused hyperparameter tuning was the difference between a model that misses 37% of diabetic patients and one that misses only 8%.
 
+ 
+![Feature Importance](Images/feature_importance.png)
+ 
 
-![Feature Importance](feature_importance.png)
+
+ 
 ---
 
 ## Model Comparison
