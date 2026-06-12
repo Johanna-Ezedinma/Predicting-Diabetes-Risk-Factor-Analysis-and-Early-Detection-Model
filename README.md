@@ -2,7 +2,8 @@
 ## *Risk Factor Analysis and Early Detection Model*  
 
 **Author:** Johanna Ezedinma  
-**Date:** June 2026
+**Date:** June 2026   
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johanna-ezedinma/)
 
 ---
 
@@ -100,5 +101,5 @@ Python; pandas; numpy; plotnine; seaborn; matplotlib; scikit-learn; pyjanitor
 ---
 
 ## Connect
-
-[LinkedIn](https://www.linkedin.com/in/johanna-ezedinma) &nbsp;|&nbsp; [GitHub](https://github.com/Johanna-ezedinma)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johanna-ezedinma/)   
+ [GitHub](https://github.com/Johanna-ezedinma)
